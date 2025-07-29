@@ -10,16 +10,15 @@ import lombok.*;
 @AllArgsConstructor
 public class RegisterRequest {
 
-    @Email
-    @NotBlank
+    @Email(message = "Email deve ter formato válido")
+    @NotBlank(message = "Email é obrigatório")
     private String email;
 
-    @NotBlank
+    @NotBlank(message = "Senha é obrigatória")
     private String senha;
 
-    @NotBlank
+    @NotBlank(message = "Nome é obrigatório")
     private String nome;
-
+    @NotBlank(message = "Papel é obrigatório")
     private Role role;
-    private Long restauranteId;
 }

@@ -45,18 +45,28 @@ public class AuthController {
     })
     public ResponseEntity<LoginResponse> login(@RequestBody LoginRequest request) {
         try {
-            // MUDANÇA: usar username e password em vez de email e senha
+            System.out.println("=== DEBUG LOGIN ===");
+            System.out.println("Username: " + request.getUsername());
+            System.out.println("Password: " + request.getPassword());
+            
             Authentication authentication = authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(request.getUsername(), request.getPassword()));
 
-            // Se a autenticação for bem-sucedida, gera um token JWT
+            System.out.println("Autenticação bem-sucedida para: " + authentication.getName());
+            
             String username = authentication.getName();
-            String token = jwtUtil.gerarToken(username); // MUDANÇA: usar gerarToken em vez de generateToken
+            String token = jwtUtil.generateToken(username); // TROCAR para generateToken
 
             LoginResponse dto = new LoginResponse(token);
             return ResponseEntity.ok(dto);
+            
         } catch (BadCredentialsException e) {
+            System.out.println("Erro de credenciais: " + e.getMessage());
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
+        } catch (Exception e) {
+            System.out.println("Erro geral: " + e.getMessage());
+            e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
     }
 
@@ -67,8 +77,17 @@ public class AuthController {
             @ApiResponse(responseCode = "400", description = "Registro inválido", content = @Content(schema = @Schema(implementation = Void.class))),
     })
     public ResponseEntity<UserResponse> register(@RequestBody RegisterRequest request) {
-        Usuario novoUsuario = usuarioService.salvar(request);
-        UserResponse response = UserResponse.fromEntity(novoUsuario);
-        return ResponseEntity.status(HttpStatus.CREATED).body(response);
+        try {
+            Object resultado = usuarioService.register(request); // TROCAR salvar para register
+            
+            // Por enquanto, retornar resposta simples
+            UserResponse response = new UserResponse(); // Criar construtor simples
+            response.setMessage("Usuário registrado com sucesso");
+            
+            return ResponseEntity.status(HttpStatus.CREATED).body(response);
+        } catch (Exception e) {
+            System.out.println("Erro no register: " + e.getMessage());
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+        }
     }
 }
