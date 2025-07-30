@@ -4,7 +4,6 @@ package com.deliverytech.delivery_api.service;
 import com.deliverytech.delivery_api.dto.request.ClienteRequest;
 import com.deliverytech.delivery_api.model.Cliente;
 
-import jakarta.validation.Valid;
 
 import java.util.List;
 import java.util.Optional;
@@ -12,6 +11,7 @@ import java.util.Optional;
 /**
  * Interface de serviços para gerenciamento de clientes
  */
+
 public interface ClienteService {
 
   

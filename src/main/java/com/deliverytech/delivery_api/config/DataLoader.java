@@ -38,48 +38,6 @@ public class DataLoader implements CommandLineRunner {
         // ✅ ADICIONAR: Spring Boot iniciada com sucesso + Bender
         System.out.println("\n✅ Spring Boot Application iniciada com sucesso!");
         
-        // 🤖 BENDER DIZENDO "AHHHH! Agora eu entendi!!!"
-        System.out.println("\n\"AHHHH! Agora eu entendi!!!\"");
-        System.out.println();
-        System.out.println("                     $$$                       ");
-        System.out.println("                    $   $                      ");
-        System.out.println("                     $$$                       ");
-        System.out.println("                     $ $                       ");
-        System.out.println("                     $ $                       ");
-        System.out.println("                   $$$ $$$                     ");
-        System.out.println("                 $$  $$$  $$$                  ");
-        System.out.println("               $$  $$$$$$$   $                 ");
-        System.out.println("              $               $                ");
-        System.out.println("             $                 $               ");
-        System.out.println("             $                 $               ");
-        System.out.println("             $     $$$$$$$$$$$$$$$             ");
-        System.out.println("             $    $               $            ");
-        System.out.println("             $    $   $$$$$$$$$$$$$            ");
-        System.out.println("             $   $   $           $$$           ");
-        System.out.println("             $   $   $ $$$   $$$  $$           ");
-        System.out.println("             $   $   $ $$$   $$$  $$           ");
-        System.out.println("             $   $   $           $$$           ");
-        System.out.println("             $    $   $$$$$$$$$$$$$            ");
-        System.out.println("             $     $$$$$$$$$$$$$$              ");
-        System.out.println("             $                 $               ");
-        System.out.println("             $    $$$$$$$$$$$$$$               ");
-        System.out.println("             $   $  $  $  $  $                 ");
-        System.out.println("             $  $$$$$$$$$$$$$$                 ");
-        System.out.println("             $  $   $  $  $  $                 ");
-        System.out.println("             $   $$$$$$$$$$$$$$$               ");
-        System.out.println("            $$$                 $$$            ");
-        System.out.println("          $$   $$$         $$$$$   $$          ");
-        System.out.println("        $$        $$$$$$$$$          $$$       ");
-        System.out.println("       $  $$                     $$$$   $$     ");
-        System.out.println("    $$$$$   $$$$$$$$      $$$$$$$       $ $    ");
-        System.out.println("  $      $$         $$$$$$              $ $$   ");
-        System.out.println(" $    $    $                            $ $ $  ");
-        System.out.println(" $     $   $              $$$$$$$$$$$   $ $ $$ ");
-        System.out.println(" $$$    $   $  $$$$$$$$$$$$          $   $ $ $$");
-        System.out.println("$   $$$$    $  $                     $   $ $$ $");
-        System.out.println("$$$    $   $$  $                     $$  $ $  $");
-        System.out.println("$   $  $  $$   $                      $  $$$  $");
-        System.out.println("$     $$ $$    $               $$$    $  $ $  $");
         
         // ✅ INFORMAR sobre captura automática
         System.out.println("\n🎯 SISTEMA DE CAPTURA AUTOMÁTICA ATIVO!");
