@@ -28,29 +28,29 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running com.deliverytech.delivery_api.controller.ClienteControllerTest
-18:37:37.256 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.deliverytech.delivery_api.controller.ClienteControllerTest]: ClienteControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-18:37:37.527 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.deliverytech.delivery_api.DeliveryApiApplication for test class com.deliverytech.delivery_api.controller.ClienteControllerTest
-18:37:37.757 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
-2025-07-31T18:37:38.149-03:00  INFO 24692 --- [           main] c.d.d.controller.ClienteControllerTest   : Starting ClienteControllerTest using Java 21.0.7 with PID 24692 (started by Ander in C:\Users\Ander\OneDrive\Documentos\Java\FAT\delivery-tech)
-2025-07-31T18:37:38.151-03:00  INFO 24692 --- [           main] c.d.d.controller.ClienteControllerTest   : The following 1 profile is active: "test"
-2025-07-31T18:37:38.173-03:00 DEBUG 24692 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@13ef7fa1
+20:15:50.316 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.deliverytech.delivery_api.controller.ClienteControllerTest]: ClienteControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:15:50.620 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.deliverytech.delivery_api.DeliveryApiApplication for test class com.deliverytech.delivery_api.controller.ClienteControllerTest
+20:15:50.854 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+2025-07-31T20:15:51.339-03:00  INFO 29220 --- [           main] c.d.d.controller.ClienteControllerTest   : Starting ClienteControllerTest using Java 21.0.7 with PID 29220 (started by Ander in C:\Users\Ander\OneDrive\Documentos\Java\FAT\delivery-tech)
+2025-07-31T20:15:51.341-03:00  INFO 29220 --- [           main] c.d.d.controller.ClienteControllerTest   : The following 1 profile is active: "test"
+2025-07-31T20:15:51.370-03:00 DEBUG 29220 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@13ef7fa1
 Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
-Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
 WARNING: A Java agent has been loaded dynamically (C:\Users\Ander\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.6\byte-buddy-agent-1.17.6.jar)
 WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
 WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
 WARNING: Dynamic loading of agents will be disallowed by default in a future release
-2025-07-31T18:37:42.754-03:00  WARN 24692 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-07-31T18:37:46.522-03:00 DEBUG 24692 --- [           main] i.m.c.u.i.logging.InternalLoggerFactory  : Using SLF4J as the default logging framework
-2025-07-31T18:37:46.748-03:00 DEBUG 24692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 52 mappings in 'requestMappingHandlerMapping'
-2025-07-31T18:37:46.927-03:00 DEBUG 24692 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2025-07-31T18:37:47.067-03:00  INFO 24692 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2025-07-31T18:37:47.368-03:00 DEBUG 24692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-07-31T18:37:47.420-03:00 DEBUG 24692 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-07-31T18:37:47.548-03:00 DEBUG 24692 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: webMvcObservationFilter urls=[/*] order=-2147483647, responseCaptureFilter urls=[/api/*] order=1, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, jwtAuthenticationFilter urls=[/*] order=2147483647
-2025-07-31T18:37:47.548-03:00 DEBUG 24692 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: 
-2025-07-31T18:37:47.571-03:00 DEBUG 24692 --- [           main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2025-07-31T18:37:47.634-03:00  INFO 24692 --- [           main] c.d.d.controller.ClienteControllerTest   : Started ClienteControllerTest in 9.891 seconds (process running for 11.527)
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+2025-07-31T20:15:56.260-03:00  WARN 29220 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-31T20:16:00.694-03:00 DEBUG 29220 --- [           main] i.m.c.u.i.logging.InternalLoggerFactory  : Using SLF4J as the default logging framework
+2025-07-31T20:16:00.958-03:00 DEBUG 29220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 52 mappings in 'requestMappingHandlerMapping'
+2025-07-31T20:16:01.205-03:00 DEBUG 29220 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-07-31T20:16:01.443-03:00  INFO 29220 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-07-31T20:16:01.920-03:00 DEBUG 29220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-07-31T20:16:01.970-03:00 DEBUG 29220 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-07-31T20:16:02.117-03:00 DEBUG 29220 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: webMvcObservationFilter urls=[/*] order=-2147483647, responseCaptureFilter urls=[/api/*] order=1, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, jwtAuthenticationFilter urls=[/*] order=2147483647
+2025-07-31T20:16:02.117-03:00 DEBUG 29220 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: 
+2025-07-31T20:16:02.145-03:00 DEBUG 29220 --- [           main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-07-31T20:16:02.220-03:00  INFO 29220 --- [           main] c.d.d.controller.ClienteControllerTest   : Started ClienteControllerTest in 11.379 seconds (process running for 13.202)
 === INICIANDO CARGA DE DADOS DE TESTE ===
 --- Inserindo clientes ---
 ? 5 clientes inseridos
@@ -66,61 +66,61 @@ WARNING: Dynamic loading of agents will be disallowed by default in a future rel
 ? Respostas serão salvas em: ./entregaveis/
 ? Faça requisições para /api/* e veja os arquivos sendo gerados!
 
-2025-07-31T18:37:48.020-03:00 DEBUG 24692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#buscarPorId(Long)
-2025-07-31T18:37:48.037-03:00  INFO 24692 --- [           main] c.d.d.controller.ClienteController       : Recebida requisição para buscar cliente ID: 1
-2025-07-31T18:37:48.080-03:00 DEBUG 24692 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/yaml]
-2025-07-31T18:37:48.081-03:00 DEBUG 24692 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.deliverytech.delivery_api.dto.response.ApiResponseWrapper@39745340]
-? Resposta completa salva: entregaveis/GET_clientes_1_20250731_183748.txt
-2025-07-31T18:37:48.184-03:00 DEBUG 24692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#ativarDesativarCliente(Long)
-2025-07-31T18:37:48.185-03:00  INFO 24692 --- [           main] c.d.d.controller.ClienteController       : Recebida requisição para alterar status do cliente ID: 1
-2025-07-31T18:37:48.189-03:00 DEBUG 24692 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-2025-07-31T18:37:48.190-03:00 DEBUG 24692 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{cliente=Cliente(id=1, nome=João Silva Santos, telefone=null, endereco=null, email=joao@email.com, a (truncated)...]
-? Resposta completa salva: entregaveis/PATCH_clientes_1_status_20250731_183748.txt
-2025-07-31T18:37:48.205-03:00 DEBUG 24692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#buscarPorEmail(String)
-2025-07-31T18:37:48.208-03:00  INFO 24692 --- [           main] c.d.d.controller.ClienteController       : Recebida requisição para buscar cliente por email: inexistente@email.com
-2025-07-31T18:37:48.210-03:00 DEBUG 24692 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [*/*]
-? Resposta completa salva: entregaveis/GET_clientes_email_inexistente@email.com_20250731_183748.txt
-2025-07-31T18:37:48.241-03:00 DEBUG 24692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#buscarPorEmail(String)
-2025-07-31T18:37:48.241-03:00  INFO 24692 --- [           main] c.d.d.controller.ClienteController       : Recebida requisição para buscar cliente por email: joao@email.com
-2025-07-31T18:37:48.245-03:00 DEBUG 24692 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/yaml]
-2025-07-31T18:37:48.245-03:00 DEBUG 24692 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Cliente(id=1, nome=João Silva Santos, telefone=11999999999, endereco=Av João da Silva, email=joao@em (truncated)...]
-? Resposta completa salva: entregaveis/GET_clientes_email_joao@email.com_20250731_183748.txt
-2025-07-31T18:37:48.273-03:00 DEBUG 24692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#cadastrar(ClienteRequest)
-2025-07-31T18:37:48.304-03:00 DEBUG 24692 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ClienteRequest(nome=null, telefone=null, email=null, endereco=null)]
-2025-07-31T18:37:48.353-03:00 DEBUG 24692 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.deliverytech.delivery_api.exception.GlobalExceptionHandler#handleValidationExceptions(MethodArgumentNotValidException)
-2025-07-31T18:37:48.354-03:00  WARN 24692 --- [           main] c.d.d.exception.GlobalExceptionHandler   : Erro de validação: {telefone=Telefone é obrigatório, endereco=Endereço é obrigatório, nome=Nome é obrigatório, email=Email é obrigatório}
-2025-07-31T18:37:48.355-03:00 DEBUG 24692 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-2025-07-31T18:37:48.355-03:00 DEBUG 24692 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{validationErrors={telefone=Telefone é obrigatório, endereco=Endereço é obrigatório, nome=Nome é obr (truncated)...]
-2025-07-31T18:37:48.357-03:00 DEBUG 24692 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.deliverytech.delivery_api.controller.ClienteController.cadastrar(com.deliverytech.delivery_api.dto.request.ClienteRequest) with 4 errors: [Field error in object 'clienteRequest' on field 'nome': rejected value [null]; codes [NotBlank.clienteRequest.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequest.nome,nome]; arguments []; default message [nome]]; default message [Nome é obrigatório]] [Field error in object 'clienteRequest' on field 'endereco': rejected value [null]; codes [NotBlank.clienteRequest.endereco,NotBlank.endereco,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequest.endereco,endereco]; arguments []; default message [endereco]]; default message [Endereço é obrigatório]] [Field error in object 'clienteRequest' on field 'telefone': rejected value [null]; codes [NotBlank.clienteRequest.telefone,NotBlank.telefone,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequest.telefone,telefone]; arguments []; default message [telefone]]; default message [Telefone é obrigatório]] [Field error in object 'clienteRequest' on field 'email': rejected value [null]; codes [NotBlank.clienteRequest.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequest.email,email]; arguments []; default message [email]]; default message [Email é obrigatório]] ]
-? Resposta completa salva: entregaveis/POST_clientes_20250731_183748.txt
-2025-07-31T18:37:48.369-03:00 DEBUG 24692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#buscarPorId(Long)
-2025-07-31T18:37:48.369-03:00  INFO 24692 --- [           main] c.d.d.controller.ClienteController       : Recebida requisição para buscar cliente ID: 999
-2025-07-31T18:37:48.370-03:00 DEBUG 24692 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-2025-07-31T18:37:48.370-03:00 DEBUG 24692 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.deliverytech.delivery_api.dto.response.ApiResponseWrapper@3ef92ab2]
-? Resposta completa salva: entregaveis/GET_clientes_999_20250731_183748.txt
-2025-07-31T18:37:48.380-03:00 DEBUG 24692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#buscarPorNome(String)
-2025-07-31T18:37:48.381-03:00  INFO 24692 --- [           main] c.d.d.controller.ClienteController       : Recebida requisição para buscar clientes por nome: Silva
-2025-07-31T18:37:48.395-03:00 DEBUG 24692 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/yaml]
-2025-07-31T18:37:48.396-03:00 DEBUG 24692 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Cliente(id=1, nome=João Silva Santos, telefone=11999999999, endereco=Av João da Silva, email=joao@e (truncated)...]
-? Resposta completa salva: entregaveis/GET_clientes_buscar_20250731_183748.txt
-2025-07-31T18:37:48.420-03:00 DEBUG 24692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#listar()
-2025-07-31T18:37:48.420-03:00  INFO 24692 --- [           main] c.d.d.controller.ClienteController       : Recebida requisição para listar clientes ativos
-2025-07-31T18:37:48.421-03:00 DEBUG 24692 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/yaml]
-2025-07-31T18:37:48.421-03:00 DEBUG 24692 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Cliente(id=1, nome=João Silva Santos, telefone=11999999999, endereco=Av João da Silva, email=joao@e (truncated)...]
-? Resposta completa salva: entregaveis/GET_clientes_20250731_183748.txt
-2025-07-31T18:37:48.437-03:00 DEBUG 24692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#atualizar(Long, ClienteRequest)
-2025-07-31T18:37:48.438-03:00 DEBUG 24692 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ClienteRequest(nome=João Silva Santos, telefone=11999999999, email=joao@email.com, endereco=Av João  (truncated)...]
-2025-07-31T18:37:48.451-03:00  INFO 24692 --- [           main] c.d.d.controller.ClienteController       : Recebida requisição para atualizar cliente ID: 1
-2025-07-31T18:37:48.452-03:00 DEBUG 24692 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-2025-07-31T18:37:48.452-03:00 DEBUG 24692 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Cliente(id=1, nome=João Silva Atualizado, telefone=null, endereco=null, email=joao@email.com, ativo= (truncated)...]
-? Resposta completa salva: entregaveis/PUT_clientes_1_20250731_183748.txt
-2025-07-31T18:37:48.462-03:00 DEBUG 24692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#cadastrar(ClienteRequest)
-2025-07-31T18:37:48.463-03:00 DEBUG 24692 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ClienteRequest(nome=João Silva Santos, telefone=11999999999, email=joao@email.com, endereco=Av João  (truncated)...]
-2025-07-31T18:37:48.463-03:00  INFO 24692 --- [           main] c.d.d.controller.ClienteController       : Recebida requisição para cadastrar cliente: joao@email.com
-2025-07-31T18:37:48.464-03:00 DEBUG 24692 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-2025-07-31T18:37:48.464-03:00 DEBUG 24692 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Cliente(id=1, nome=João Silva Santos, telefone=11999999999, endereco=Av João da Silva, email=joao@em (truncated)...]
-? Resposta completa salva: entregaveis/POST_clientes_20250731_183748.txt
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.46 s -- in com.deliverytech.delivery_api.controller.ClienteControllerTest
+2025-07-31T20:16:02.639-03:00 DEBUG 29220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#buscarPorId(Long)
+2025-07-31T20:16:02.661-03:00  INFO 29220 --- [           main] c.d.d.controller.ClienteController       : Recebida requisição para buscar cliente ID: 1
+2025-07-31T20:16:02.717-03:00 DEBUG 29220 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/yaml]
+2025-07-31T20:16:02.720-03:00 DEBUG 29220 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.deliverytech.delivery_api.dto.response.ApiResponseWrapper@43e8334a]
+? Resposta completa salva: entregaveis/GET_clientes_1_20250731_201602.txt
+2025-07-31T20:16:02.829-03:00 DEBUG 29220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#ativarDesativarCliente(Long)
+2025-07-31T20:16:02.830-03:00  INFO 29220 --- [           main] c.d.d.controller.ClienteController       : Recebida requisição para alterar status do cliente ID: 1
+2025-07-31T20:16:02.835-03:00 DEBUG 29220 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-07-31T20:16:02.836-03:00 DEBUG 29220 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{cliente=Cliente(id=1, nome=João Silva Santos, telefone=null, endereco=null, email=joao@email.com, a (truncated)...]
+? Resposta completa salva: entregaveis/PATCH_clientes_1_status_20250731_201602.txt
+2025-07-31T20:16:02.852-03:00 DEBUG 29220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#buscarPorEmail(String)
+2025-07-31T20:16:02.858-03:00  INFO 29220 --- [           main] c.d.d.controller.ClienteController       : Recebida requisição para buscar cliente por email: inexistente@email.com
+2025-07-31T20:16:02.859-03:00 DEBUG 29220 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [*/*]
+? Resposta completa salva: entregaveis/GET_clientes_email_inexistente@email.com_20250731_201602.txt
+2025-07-31T20:16:02.891-03:00 DEBUG 29220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#buscarPorEmail(String)
+2025-07-31T20:16:02.891-03:00  INFO 29220 --- [           main] c.d.d.controller.ClienteController       : Recebida requisição para buscar cliente por email: joao@email.com
+2025-07-31T20:16:02.895-03:00 DEBUG 29220 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/yaml]
+2025-07-31T20:16:02.896-03:00 DEBUG 29220 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Cliente(id=1, nome=João Silva Santos, telefone=11999999999, endereco=Av João da Silva, email=joao@em (truncated)...]
+? Resposta completa salva: entregaveis/GET_clientes_email_joao@email.com_20250731_201602.txt
+2025-07-31T20:16:02.926-03:00 DEBUG 29220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#cadastrar(ClienteRequest)
+2025-07-31T20:16:02.971-03:00 DEBUG 29220 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ClienteRequest(nome=null, telefone=null, email=null, endereco=null)]
+2025-07-31T20:16:03.040-03:00 DEBUG 29220 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.deliverytech.delivery_api.exception.GlobalExceptionHandler#handleValidationExceptions(MethodArgumentNotValidException)
+2025-07-31T20:16:03.041-03:00  WARN 29220 --- [           main] c.d.d.exception.GlobalExceptionHandler   : Erro de validação: {telefone=Telefone é obrigatório, endereco=Endereço é obrigatório, nome=Nome é obrigatório, email=Email é obrigatório}
+2025-07-31T20:16:03.042-03:00 DEBUG 29220 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-07-31T20:16:03.044-03:00 DEBUG 29220 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{validationErrors={telefone=Telefone é obrigatório, endereco=Endereço é obrigatório, nome=Nome é obr (truncated)...]
+2025-07-31T20:16:03.046-03:00 DEBUG 29220 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.deliverytech.delivery_api.controller.ClienteController.cadastrar(com.deliverytech.delivery_api.dto.request.ClienteRequest) with 4 errors: [Field error in object 'clienteRequest' on field 'nome': rejected value [null]; codes [NotBlank.clienteRequest.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequest.nome,nome]; arguments []; default message [nome]]; default message [Nome é obrigatório]] [Field error in object 'clienteRequest' on field 'telefone': rejected value [null]; codes [NotBlank.clienteRequest.telefone,NotBlank.telefone,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequest.telefone,telefone]; arguments []; default message [telefone]]; default message [Telefone é obrigatório]] [Field error in object 'clienteRequest' on field 'endereco': rejected value [null]; codes [NotBlank.clienteRequest.endereco,NotBlank.endereco,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequest.endereco,endereco]; arguments []; default message [endereco]]; default message [Endereço é obrigatório]] [Field error in object 'clienteRequest' on field 'email': rejected value [null]; codes [NotBlank.clienteRequest.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequest.email,email]; arguments []; default message [email]]; default message [Email é obrigatório]] ]
+? Resposta completa salva: entregaveis/POST_clientes_20250731_201603.txt
+2025-07-31T20:16:03.063-03:00 DEBUG 29220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#buscarPorId(Long)
+2025-07-31T20:16:03.063-03:00  INFO 29220 --- [           main] c.d.d.controller.ClienteController       : Recebida requisição para buscar cliente ID: 999
+2025-07-31T20:16:03.063-03:00 DEBUG 29220 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-07-31T20:16:03.065-03:00 DEBUG 29220 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.deliverytech.delivery_api.dto.response.ApiResponseWrapper@2c7cb194]
+? Resposta completa salva: entregaveis/GET_clientes_999_20250731_201603.txt
+2025-07-31T20:16:03.079-03:00 DEBUG 29220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#buscarPorNome(String)
+2025-07-31T20:16:03.080-03:00  INFO 29220 --- [           main] c.d.d.controller.ClienteController       : Recebida requisição para buscar clientes por nome: Silva
+2025-07-31T20:16:03.088-03:00 DEBUG 29220 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/yaml]
+2025-07-31T20:16:03.089-03:00 DEBUG 29220 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Cliente(id=1, nome=João Silva Santos, telefone=11999999999, endereco=Av João da Silva, email=joao@e (truncated)...]
+? Resposta completa salva: entregaveis/GET_clientes_buscar_20250731_201603.txt
+2025-07-31T20:16:03.111-03:00 DEBUG 29220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#listar()
+2025-07-31T20:16:03.111-03:00  INFO 29220 --- [           main] c.d.d.controller.ClienteController       : Recebida requisição para listar clientes ativos
+2025-07-31T20:16:03.112-03:00 DEBUG 29220 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/yaml]
+2025-07-31T20:16:03.112-03:00 DEBUG 29220 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Cliente(id=1, nome=João Silva Santos, telefone=11999999999, endereco=Av João da Silva, email=joao@e (truncated)...]
+? Resposta completa salva: entregaveis/GET_clientes_20250731_201603.txt
+2025-07-31T20:16:03.186-03:00 DEBUG 29220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#atualizar(Long, ClienteRequest)
+2025-07-31T20:16:03.188-03:00 DEBUG 29220 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ClienteRequest(nome=João Silva Santos, telefone=11999999999, email=joao@email.com, endereco=Av João  (truncated)...]
+2025-07-31T20:16:03.199-03:00  INFO 29220 --- [           main] c.d.d.controller.ClienteController       : Recebida requisição para atualizar cliente ID: 1
+2025-07-31T20:16:03.200-03:00 DEBUG 29220 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-07-31T20:16:03.200-03:00 DEBUG 29220 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Cliente(id=1, nome=João Silva Atualizado, telefone=null, endereco=null, email=joao@email.com, ativo= (truncated)...]
+? Resposta completa salva: entregaveis/PUT_clientes_1_20250731_201603.txt
+2025-07-31T20:16:03.212-03:00 DEBUG 29220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#cadastrar(ClienteRequest)
+2025-07-31T20:16:03.213-03:00 DEBUG 29220 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ClienteRequest(nome=João Silva Santos, telefone=11999999999, email=joao@email.com, endereco=Av João  (truncated)...]
+2025-07-31T20:16:03.214-03:00  INFO 29220 --- [           main] c.d.d.controller.ClienteController       : Recebida requisição para cadastrar cliente: joao@email.com
+2025-07-31T20:16:03.214-03:00 DEBUG 29220 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-07-31T20:16:03.214-03:00 DEBUG 29220 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Cliente(id=1, nome=João Silva Santos, telefone=11999999999, endereco=Av João da Silva, email=joao@em (truncated)...]
+? Resposta completa salva: entregaveis/POST_clientes_20250731_201603.txt
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.25 s -- in com.deliverytech.delivery_api.controller.ClienteControllerTest
 [INFO] Running com.deliverytech.delivery_api.DeliveryApiApplicationTests
 
   .   ____          _            __ _ _
@@ -132,19 +132,19 @@ WARNING: Dynamic loading of agents will be disallowed by default in a future rel
 
  :: Spring Boot ::                (v3.5.3)
 
-2025-07-31T18:37:48.513-03:00  INFO 24692 --- [           main] c.d.d.DeliveryApiApplicationTests        : Starting DeliveryApiApplicationTests using Java 21.0.7 with PID 24692 (started by Ander in C:\Users\Ander\OneDrive\Documentos\Java\FAT\delivery-tech)
-2025-07-31T18:37:48.513-03:00  INFO 24692 --- [           main] c.d.d.DeliveryApiApplicationTests        : No active profile set, falling back to 1 default profile: "default"
-2025-07-31T18:37:48.516-03:00 DEBUG 24692 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4186d064
-2025-07-31T18:37:48.869-03:00  INFO 24692 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-31T18:37:48.892-03:00  INFO 24692 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 5 JPA repository interfaces.
-2025-07-31T18:37:48.982-03:00  INFO 24692 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-31T18:37:48.984-03:00  INFO 24692 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-07-31T18:37:48.991-03:00  INFO 24692 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-31T18:37:48.992-03:00  INFO 24692 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2025-07-31T18:37:48.994-03:00  INFO 24692 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn2: url=jdbc:h2:mem:delivery user=SA
-2025-07-31T18:37:48.995-03:00  INFO 24692 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2025-07-31T18:37:48.995-03:00  WARN 24692 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-07-31T18:37:48.999-03:00  INFO 24692 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-07-31T20:16:03.286-03:00  INFO 29220 --- [           main] c.d.d.DeliveryApiApplicationTests        : Starting DeliveryApiApplicationTests using Java 21.0.7 with PID 29220 (started by Ander in C:\Users\Ander\OneDrive\Documentos\Java\FAT\delivery-tech)
+2025-07-31T20:16:03.286-03:00  INFO 29220 --- [           main] c.d.d.DeliveryApiApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2025-07-31T20:16:03.288-03:00 DEBUG 29220 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@12711d40
+2025-07-31T20:16:03.729-03:00  INFO 29220 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-31T20:16:03.756-03:00  INFO 29220 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 5 JPA repository interfaces.
+2025-07-31T20:16:03.866-03:00  INFO 29220 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-31T20:16:03.868-03:00  INFO 29220 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-31T20:16:03.876-03:00  INFO 29220 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-31T20:16:03.876-03:00  INFO 29220 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-07-31T20:16:03.879-03:00  INFO 29220 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn2: url=jdbc:h2:mem:delivery user=SA
+2025-07-31T20:16:03.880-03:00  INFO 29220 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-07-31T20:16:03.880-03:00  WARN 29220 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-31T20:16:03.884-03:00  INFO 29220 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -152,7 +152,7 @@ WARNING: Dynamic loading of agents will be disallowed by default in a future rel
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-07-31T18:37:49.075-03:00  INFO 24692 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-31T20:16:03.965-03:00  INFO 29220 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 Hibernate: 
     create table cliente (
         id bigint generated by default as identity,
@@ -266,16 +266,16 @@ Hibernate:
        add constraint FKb9jhjyghjcn25guim7q4pt8qx 
        foreign key (restaurante_id) 
        references restaurante
-2025-07-31T18:37:49.119-03:00  INFO 24692 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-31T18:37:49.208-03:00  INFO 24692 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name authServiceImpl
-2025-07-31T18:37:49.414-03:00 DEBUG 24692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 56 mappings in 'requestMappingHandlerMapping'
-2025-07-31T18:37:49.440-03:00 DEBUG 24692 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
-2025-07-31T18:37:49.480-03:00  INFO 24692 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
-2025-07-31T18:37:49.498-03:00 DEBUG 24692 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2025-07-31T18:37:49.521-03:00 DEBUG 24692 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-07-31T18:37:49.525-03:00 DEBUG 24692 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-07-31T18:37:49.619-03:00  INFO 24692 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:delivery'
-2025-07-31T18:37:49.638-03:00  INFO 24692 --- [           main] c.d.d.DeliveryApiApplicationTests        : Started DeliveryApiApplicationTests in 1.159 seconds (process running for 13.532)
+2025-07-31T20:16:04.011-03:00  INFO 29220 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-31T20:16:04.106-03:00  INFO 29220 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name authServiceImpl
+2025-07-31T20:16:04.337-03:00 DEBUG 29220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 56 mappings in 'requestMappingHandlerMapping'
+2025-07-31T20:16:04.373-03:00 DEBUG 29220 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-07-31T20:16:04.412-03:00  INFO 29220 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2025-07-31T20:16:04.431-03:00 DEBUG 29220 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-07-31T20:16:04.465-03:00 DEBUG 29220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-07-31T20:16:04.472-03:00 DEBUG 29220 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-07-31T20:16:04.587-03:00  INFO 29220 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:delivery'
+2025-07-31T20:16:04.607-03:00  INFO 29220 --- [           main] c.d.d.DeliveryApiApplicationTests        : Started DeliveryApiApplicationTests in 1.371 seconds (process running for 15.589)
 === INICIANDO CARGA DE DADOS DE TESTE ===
 --- Inserindo clientes ---
 Hibernate: 
@@ -443,11 +443,11 @@ Hibernate:
 ? Respostas serão salvas em: ./entregaveis/
 ? Faça requisições para /api/* e veja os arquivos sendo gerados!
 
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.203 s -- in com.deliverytech.delivery_api.DeliveryApiApplicationTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.422 s -- in com.deliverytech.delivery_api.DeliveryApiApplicationTests
 [INFO] Running com.deliverytech.delivery_api.services.ClienteServiceTest
-[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.179 s -- in com.deliverytech.delivery_api.services.ClienteServiceTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.206 s -- in com.deliverytech.delivery_api.services.ClienteServiceTest
 [INFO] Running com.deliverytech.delivery_api.services.PedidoServiceTest
-[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 s -- in com.deliverytech.delivery_api.services.PedidoServiceTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 s -- in com.deliverytech.delivery_api.services.PedidoServiceTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -460,6 +460,6 @@ Hibernate:
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  16.246 s
-[INFO] Finished at: 2025-07-31T18:37:50-03:00
+[INFO] Total time:  18.574 s
+[INFO] Finished at: 2025-07-31T20:16:05-03:00
 [INFO] ------------------------------------------------------------------------

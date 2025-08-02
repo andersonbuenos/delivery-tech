@@ -1,0 +1,104 @@
+# ===================================================================
+# DOCKER COMPOSE - DELIVERY API (VERSÃO CORRIGIDA)
+# Configuração sem version obsoleto e com fallbacks
+# ===================================================================
+
+services:
+  # ===================================================================
+  # DELIVERY API - Aplicação Principal
+  # ===================================================================
+  delivery-api:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: delivery-api
+    ports:
+      - "8080:8080"    # Host:Container
+    environment:
+      # Profile específico para Docker
+      SPRING_PROFILES_ACTIVE: docker
+      
+      # Configurações JVM
+      JAVA_OPTS: "-Xms256m -Xmx512m -XX:+UseG1GC -XX:+UseContainerSupport"
+        
+      # Configurações da aplicação
+      SERVER_PORT: 8080
+      
+      # Banco H2 (será persistido via volume)
+      SPRING_DATASOURCE_URL: jdbc:h2:file:/app/data/delivery;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE
+      SPRING_DATASOURCE_USERNAME: sa
+      SPRING_DATASOURCE_PASSWORD: 
+      
+      # JPA/Hibernate
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_JPA_SHOW_SQL: false
+      
+      # H2 Console (para desenvolvimento)
+      SPRING_H2_CONSOLE_ENABLED: true
+      SPRING_H2_CONSOLE_PATH: /h2-console
+      SPRING_H2_CONSOLE_SETTINGS_WEB_ALLOW_OTHERS: true
+      
+      # Security
+      SPRING_SECURITY_USER_NAME: admin
+      SPRING_SECURITY_USER_PASSWORD: admin123
+      
+      # JWT
+      JWT_SECRET: my-secret-keyQWERTYUIOPASDFGHJKLZXCVBNMQWERTY1-DOCKER
+      JWT_EXPIRATION: 86400000
+      
+      # Logging
+      LOGGING_LEVEL_COM_DELIVERYTECH: INFO
+      
+    volumes:
+      # Persistir dados H2
+      - h2_data:/app/data
+      # Persistir logs
+      - app_logs:/app/logs
+      
+    # ADICIONAR ESTA LINHA:
+    networks:
+      - delivery-network
+      
+    restart: unless-stopped
+    
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:8080/actuator/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 90s
+
+  # ===================================================================
+  # ADMINER - Interface Web para Banco (CORRIGIDO)
+  # ===================================================================
+  adminer:
+    image: adminer:latest
+    container_name: delivery-adminer
+    ports:
+      - "8083:8080"
+    environment:
+      ADMINER_DEFAULT_SERVER: delivery-api
+    networks:
+      - delivery-network
+    restart: unless-stopped
+    depends_on:
+      - delivery-api
+
+# ===================================================================
+# VOLUMES PERSISTENTES
+# ===================================================================
+volumes:
+  h2_data:
+    driver: local
+    name: delivery_h2_data
+  app_logs:
+    driver: local
+    name: delivery_logs
+
+# ===================================================================
+# REDE CUSTOMIZADA
+# ===================================================================
+networks:
+  delivery-network:
+    driver: bridge
+    name: delivery_network

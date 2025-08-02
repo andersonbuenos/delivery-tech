@@ -1,0 +1,111 @@
+# ===================================================================
+# CONFIGURAÇÃO ESPECÍFICA PARA DOCKER - DELIVERY API
+# ===================================================================
+
+server:
+  port: 8080
+  servlet:
+    context-path: /
+  compression:
+    enabled: true
+
+spring:
+  # ===================================================================
+  # DATASOURCE - H2 PERSISTENTE
+  # ===================================================================
+  datasource:
+    url: jdbc:h2:file:/app/data/delivery;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE
+    driverClassName: org.h2.Driver
+    username: sa
+    password: 
+    
+  # ===================================================================
+  # JPA/HIBERNATE
+  # ===================================================================
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+        
+  # ===================================================================
+  # H2 CONSOLE
+  # ===================================================================
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        web-allow-others: true
+        trace: false
+        
+  # ===================================================================
+  # SECURITY
+  # ===================================================================
+  security:
+    user:
+      name: admin
+      password: admin123
+      roles: USER,ADMIN
+
+# ===================================================================
+# JWT CONFIGURATION
+# ===================================================================
+jwt:
+  secret: my-secret-keyQWERTYUIOPASDFGHJKLZXCVBNMQWERTY1-DOCKER
+  expiration: 86400000
+
+# ===================================================================
+# LOGGING
+# ===================================================================
+logging:
+  level:
+    com.deliverytech.delivery_api: INFO
+    org.springframework.security: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+  pattern:
+    file: "%d{ISO8601} [%thread] %-5level %logger{36} - %msg%n"
+    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+  file:
+    name: /app/logs/delivery-api.log
+    max-file-size: 10MB
+    max-history: 10
+
+# ===================================================================
+# MANAGEMENT/ACTUATOR
+# ===================================================================
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+      base-path: /actuator
+  endpoint:
+    health:
+      show-details: always
+  info:
+    env:
+      enabled: true
+    java:
+      enabled: true
+    os:
+      enabled: true
+
+# ===================================================================
+# INFO ENDPOINT
+# ===================================================================
+info:
+  app:
+    name: "Delivery API"
+    description: "API para sistema de delivery"
+    version: "1.0.0"
+    environment: "docker"
+  java:
+    version: "@java.version@"
+  maven:
+    version: "@project.version@"
