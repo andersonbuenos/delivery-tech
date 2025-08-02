@@ -12,6 +12,7 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: delivery-api
+    user: root
     ports:
       - "8080:8080"    # Host:Container
     environment:
