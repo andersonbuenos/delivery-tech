@@ -50,7 +50,13 @@ jobs:
         run: docker stop delivery-tech-test
 
       - name: Salvar logs do pipeline
-        run: mkdir -p entregaveis && cp -r target/surefire-reports entregaveis/
+        run: |
+          mkdir -p entregaveis
+          if [ -d target/surefire-reports ]; then
+            cp -r target/surefire-reports entregaveis/
+          else
+            echo "Nenhum relatório de teste encontrado." > entregaveis/sem-relatorio.txt
+          fi
 
       - name: Upload dos logs como artefato
         uses: actions/upload-artifact@v4
